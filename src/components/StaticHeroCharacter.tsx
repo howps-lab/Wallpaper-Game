@@ -119,10 +119,10 @@ export const StaticHeroCharacter: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute bottom-0 right-0 z-20 pointer-events-auto select-none">
+    <div className="absolute bottom-0 right-0 z-20 pointer-events-auto select-none translate-x-[18%] sm:translate-x-0 transition-transform duration-300">
       {/* Static Hero Cliff Container on the right side */}
       <div
-        className="relative group cursor-pointer w-[65vw] sm:w-[46vw] md:max-w-[460px] lg:max-w-[500px] xl:max-w-[540px] min-w-[280px]"
+        className="relative group cursor-pointer w-[68vw] sm:w-[46vw] md:max-w-[460px] lg:max-w-[500px] xl:max-w-[540px] min-w-[260px] sm:min-w-[280px]"
         onClick={() => {
           sound.playBladeShimmer();
           sound.triggerHaptic(20);
@@ -142,7 +142,7 @@ export const StaticHeroCharacter: React.FC = () => {
 
         {/* Static subtle codex tooltip toggle */}
         {showCodex && (
-          <div className="absolute bottom-28 -left-8 sm:-left-24 z-40 bg-[#090B0E]/95 border border-[#C6A46A]/60 p-4 rounded-xs shadow-2xl backdrop-blur-md max-w-[260px] animate-in fade-in duration-200">
+          <div className="absolute bottom-28 -left-16 sm:-left-24 z-40 bg-[#090B0E]/95 border border-[#C6A46A]/60 p-4 rounded-xs shadow-2xl backdrop-blur-md max-w-[230px] sm:max-w-[260px] animate-in fade-in duration-200">
             <div className="text-[10px] font-mono tracking-widest text-[#C66B38] uppercase mb-0.5">
               WATCHPOINT PRECIPICE
             </div>
