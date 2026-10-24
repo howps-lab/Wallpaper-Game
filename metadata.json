@@ -2,5 +2,7 @@
   "name": "ASHENVEIL — Official Dark Fantasy RPG",
   "description": "A kingdom lost to shadow. A legend reborn in ash. Experience the official cinematic portal for ASHENVEIL, an epic dark fantasy action RPG.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -75,7 +75,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
           </div>
 
           {/* Epic Main Title */}
-          <h1 className="font-cinzel text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[0.14em] text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D7DCE0] to-[#8C939D] drop-shadow-[0_10px_25px_rgba(0,0,0,0.95)]">
+          <h1 className="font-cinzel text-[2.7rem] sm:text-[3.375rem] md:text-[4.05rem] lg:text-[5.4rem] font-black tracking-[0.14em] text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D7DCE0] to-[#8C939D] drop-shadow-[0_10px_25px_rgba(0,0,0,0.95)]">
             ASHENVEIL
           </h1>
 
@@ -87,8 +87,8 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
             A kingdom lost to shadow. A legend reborn in ash.
           </p>
 
-          {/* Editorial Story Intro */}
-          <p className="text-sm sm:text-base text-[#B9B8B0] leading-relaxed max-w-xl mb-8 font-normal drop-shadow-lg text-balance">
+          {/* Editorial Story Intro (Hidden on mobile) */}
+          <p className="hidden sm:block text-sm sm:text-base text-[#B9B8B0] leading-relaxed max-w-xl mb-8 font-normal drop-shadow-lg text-balance">
             Beyond the shattered gates of an ancient realm, a forgotten power stirs. Journey
             through a land consumed by ancient curses, fallen kingdoms, and dragons that have
             outlived their gods.
