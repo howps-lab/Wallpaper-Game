@@ -3,6 +3,7 @@ import { ArrowDown, Flame, Compass } from 'lucide-react';
 import { AtmosphericParticles } from './AtmosphericParticles';
 import { StaticHeroCharacter } from './StaticHeroCharacter';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 interface CinematicHeroProps {
   onEnterRealm: () => void;
@@ -37,7 +38,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
         }}
       >
         <img
-          src="/src/assets/images/hero_citadel_peaks_1792815042898.jpg"
+          src={ASSETS.heroCitadel}
           alt="Colossal Gothic Citadel perched upon jagged mountain peaks amidst stormy clouds"
           referrerPolicy="no-referrer"
           className={`w-full h-full object-cover object-center ${

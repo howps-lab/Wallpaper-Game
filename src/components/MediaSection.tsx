@@ -1,31 +1,32 @@
 import React, { useState } from 'react';
 import { Play, Film, Image as ImageIcon, X, Maximize2, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 const gallery = [
   {
     id: 'citadel',
     title: 'The Sovereign Spire at Twilight',
     category: 'Environment',
-    image: '/src/assets/images/hero_citadel_peaks_1792815042898.jpg',
+    image: ASSETS.heroCitadel,
   },
   {
     id: 'colossus',
     title: 'Awakening of the Obsidian Titan',
     category: 'Colossi Encounter',
-    image: '/src/assets/images/gameplay_colossus_encounter_1792815061402.jpg',
+    image: ASSETS.gameplayColossus,
   },
   {
     id: 'ruins',
     title: 'Viaduct of the Cursed Basin',
     category: 'Exploration',
-    image: '/src/assets/images/world_ruined_kingdom_1792815043603.jpg',
+    image: ASSETS.worldRuinedKingdom,
   },
   {
     id: 'spellblade',
     title: 'Channeling the Primal Ember Blade',
     category: 'Combat',
-    image: '/src/assets/images/gameplay_forbidden_arts_1792815062199.jpg',
+    image: ASSETS.gameplayForbiddenArts,
   },
 ];
 
@@ -82,7 +83,7 @@ export const MediaSection: React.FC = () => {
         <div className="relative rounded-xs overflow-hidden border border-[#C6A46A]/60 shadow-[0_25px_60px_rgba(0,0,0,0.95)] mb-14 group">
           <div className="relative h-[380px] sm:h-[480px] md:h-[580px] overflow-hidden">
             <img
-              src="/src/assets/images/hero_citadel_peaks_1792815042898.jpg"
+              src={ASSETS.heroCitadel}
               alt="Ashenveil Official Reveal Trailer"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center transition-transform duration-1000 group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
@@ -174,7 +175,7 @@ export const MediaSection: React.FC = () => {
               {trailerStep === 0 && (
                 <div className="relative w-full h-full flex items-center justify-center animate-in fade-in duration-1000">
                   <img
-                    src="/src/assets/images/hero_citadel_peaks_1792815042898.jpg"
+                    src={ASSETS.heroCitadel}
                     alt="Scene 1"
                     className="w-full h-full object-cover scale-110 animate-pulse duration-[8000ms]"
                   />
@@ -193,7 +194,7 @@ export const MediaSection: React.FC = () => {
               {trailerStep === 1 && (
                 <div className="relative w-full h-full flex items-center justify-center animate-in fade-in duration-1000">
                   <img
-                    src="/src/assets/images/gameplay_colossus_encounter_1792815061402.jpg"
+                    src={ASSETS.gameplayColossus}
                     alt="Scene 2"
                     className="w-full h-full object-cover scale-105"
                   />
@@ -212,7 +213,7 @@ export const MediaSection: React.FC = () => {
               {trailerStep === 2 && (
                 <div className="relative w-full h-full flex items-center justify-center animate-in fade-in duration-1000">
                   <img
-                    src="/src/assets/images/gameplay_forbidden_arts_1792815062199.jpg"
+                    src={ASSETS.gameplayForbiddenArts}
                     alt="Scene 3"
                     className="w-full h-full object-cover scale-110"
                   />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sword, Compass, Wand2, ChevronRight, X, ShieldCheck } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 interface GameplayPillar {
   id: string;
@@ -26,7 +27,7 @@ const gameplayPillars: GameplayPillar[] = [
       'Ancient stone mechanisms and hidden crypt seals',
       'Atmospheric environmental hazard survival',
     ],
-    image: '/src/assets/images/world_ruined_kingdom_1792815043603.jpg',
+    image: ASSETS.worldRuinedKingdom,
     combatRole: 'Exploration & World Navigation',
     mechanics:
       'Utilize grapple spikes and wind-glide mantles to leap across thousand-foot abysses. Find hidden embers to ignite waypoints.',
@@ -43,7 +44,7 @@ const gameplayPillars: GameplayPillar[] = [
       'Adaptive boss AI that reacts to player positioning',
       'Environmental stagger and colossus collapse sequences',
     ],
-    image: '/src/assets/images/gameplay_colossus_encounter_1792815061402.jpg',
+    image: ASSETS.gameplayColossus,
     combatRole: 'Boss Battles & Precision Timing',
     mechanics:
       'Grip mechanics require endurance management while scaling towering titans. Sever runic conduits to expose the incandescent core.',
@@ -60,7 +61,7 @@ const gameplayPillars: GameplayPillar[] = [
       'Forbidden ash sorceries that cost blood or stamina',
       'Deep weapon mastery progression and relic engraving',
     ],
-    image: '/src/assets/images/gameplay_forbidden_arts_1792815062199.jpg',
+    image: ASSETS.gameplayForbiddenArts,
     combatRole: 'Combat Systems & Spellcraft',
     mechanics:
       'Combine fast stance-switching with elemental weapon infusions. Perfect parries unleash a shockwave of concentrated ember flame.',

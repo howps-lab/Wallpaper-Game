@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Compass, Skull, Mountain, ShieldAlert } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 interface Hotspot {
   id: string;
@@ -73,7 +74,7 @@ export const WorldSection: React.FC = () => {
         {/* Interactive World Map / Matte Landscape */}
         <div className="relative rounded-sm overflow-hidden border border-[#424A53]/50 shadow-[0_20px_50px_rgba(0,0,0,0.9)] group">
           <img
-            src="/src/assets/images/world_ruined_kingdom_1792815043603.jpg"
+            src={ASSETS.worldRuinedKingdom}
             alt="Vast ruined kingdom of Ashenveil with colossal gothic arches and ruined towers"
             referrerPolicy="no-referrer"
             className="w-full h-[450px] sm:h-[550px] md:h-[650px] object-cover object-center transition-transform duration-1000 group-hover:scale-[1.02]"

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 interface HeroCharacterProps {
   mouseX: number;
@@ -91,7 +92,7 @@ export const AnimatedHeroCharacter: React.FC<HeroCharacterProps> = ({ mouseX, mo
             style={{ filter: 'url(#heroWindDeform)' }}
           >
             <img
-              src="/assets/aistudio/hero_overlooking_citadel_dd1e248e.png"
+              src={ASSETS.heroOverlookingCitadel}
               alt="Lone Hero standing at the edge of a cliff overlooking the ancient citadel of Ashenveil"
               referrerPolicy="no-referrer"
               className={`w-full h-auto max-h-[82vh] object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.9)] transition-all duration-1000 ${

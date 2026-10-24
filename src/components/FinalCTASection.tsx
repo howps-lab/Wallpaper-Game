@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Flame, CheckCircle, Send, Shield } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 interface FinalCTAProps {
   onEnterRealm: () => void;
@@ -23,7 +24,7 @@ export const FinalCTASection: React.FC<FinalCTAProps> = ({ onEnterRealm }) => {
       {/* Background with dramatic dark fantasy atmosphere */}
       <div className="absolute inset-0 pointer-events-none">
         <img
-          src="/src/assets/images/hero_citadel_peaks_1792815042898.jpg"
+          src={ASSETS.heroCitadel}
           alt="Citadel background"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-bottom filter brightness-20 blur-sm scale-105"

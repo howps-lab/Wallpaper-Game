@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { sound } from '../utils/audio';
+import { ASSETS } from '../utils/assets';
 
 export const StaticHeroCharacter: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -8,7 +9,7 @@ export const StaticHeroCharacter: React.FC = () => {
 
   useEffect(() => {
     const img = new Image();
-    img.src = '/src/assets/images/hero_overlooking_cutout_1792817042631.jpg';
+    img.src = ASSETS.heroOverlookingCutout;
     img.onload = () => {
       const canvas = canvasRef.current;
       if (!canvas) return;
