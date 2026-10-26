@@ -1,19 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { sound } from '../utils/audio';
 import { ASSETS } from '../utils/assets';
 
 export const StaticHeroCharacter: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isVideoReady, setIsVideoReady] = useState(false);
   const [showCodex, setShowCodex] = useState(false);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {
-        // Autoplay handled by user interaction or browser policy
-      });
-    }
-  }, []);
 
   return (
     <div className="absolute bottom-0 right-0 z-20 pointer-events-auto select-none translate-x-[18%] sm:translate-x-0 transition-transform duration-300">
@@ -29,30 +19,15 @@ export const StaticHeroCharacter: React.FC = () => {
         {/* Soft atmospheric ground contact grounding at cliff base */}
         <div className="absolute -bottom-2 inset-x-0 h-16 bg-gradient-to-t from-[#090B0E] via-[#090B0E]/70 to-transparent pointer-events-none z-30" />
 
-        {/* Hero Video with Flowing Cape & Screen Blend Transparency */}
+        {/* Hero Character Render on Stone Pedestal */}
         <div className="relative overflow-visible">
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={ASSETS.heroVideoPoster}
-            onCanPlay={() => {
-              setIsVideoReady(true);
-              videoRef.current?.play().catch(() => {});
-            }}
-            className={`w-full h-auto max-h-[85vh] object-contain object-bottom drop-shadow-[0_20px_45px_rgba(0,0,0,0.95)] transition-opacity duration-500 ${
-              isVideoReady ? 'opacity-100' : 'opacity-90'
-            }`}
-            style={{
-              mixBlendMode: 'screen',
-            }}
-          >
-            <source src={ASSETS.heroVideo} type="video/webm" />
-            <source src="/assets/aistudio/flowing_cape_250feb68.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+          <img
+            src={ASSETS.heroPedestalImage}
+            alt="Knight of Ashenveil standing atop the stone pedestal overlooking the ancient citadel"
+            className="w-full h-auto max-h-[85vh] object-contain object-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.95)]"
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
 
         {/* Interactive subtle codex tooltip toggle */}
@@ -65,11 +40,11 @@ export const StaticHeroCharacter: React.FC = () => {
               The Exile at the Edge
             </div>
             <p className="text-[11px] leading-relaxed text-[#B9B8B0]">
-              Standing resolute at the abyss, cape flowing in the mountain winds, awaiting the destined alignment to descend upon Ashenveil.
+              Standing resolute at the abyss, surveying the shattered gates across the chasm before descending upon Ashenveil.
             </p>
             <div className="mt-2 pt-2 border-t border-[#424A53]/40 flex items-center justify-between text-[10px] font-mono text-[#C6A46A]">
               <span>STANCE: GUARD</span>
-              <span>CAPE: BILLOWING</span>
+              <span>BLADE: READY</span>
             </div>
           </div>
         )}
