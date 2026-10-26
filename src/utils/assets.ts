@@ -11,4 +11,6 @@ export const ASSETS = {
   worldRuinedKingdom: '/images/world_ruined_kingdom_1792815043603.jpg',
   gameplayColossus: '/images/gameplay_colossus_encounter_1792815061402.jpg',
   gameplayForbiddenArts: '/images/gameplay_forbidden_arts_1792815062199.jpg',
+  heroVideo: '/videos/flowing_cape_250feb68.webm',
+  heroVideoPoster: '/images/hero_video_poster.png',
 } as const;
