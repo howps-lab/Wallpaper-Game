@@ -13,5 +13,5 @@ export const ASSETS = {
   gameplayForbiddenArts: '/images/gameplay_forbidden_arts_1792815062199.jpg',
   heroVideo: '/videos/flowing_cape_250feb68.webm',
   heroVideoPoster: '/images/hero_video_poster.png',
-  heroPedestalImage: '/images/hero_knight_pedestal.gif',
+  heroPedestalImage: '/images/hero_knight_pedestal.png',
 } as const;
