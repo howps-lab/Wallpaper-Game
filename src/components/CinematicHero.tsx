@@ -103,7 +103,7 @@ export const CinematicHero: React.FC<CinematicHeroProps> = ({
                 sound.triggerHaptic(35);
                 onEnterRealm();
               }}
-              className="relative group px-7 sm:px-9 py-3.5 sm:py-4 bg-transparent hover:bg-[#C6A46A]/10 active:bg-[#C6A46A]/20 border border-[#C6A46A] text-[#D7DCE0] font-cinzel font-bold text-xs sm:text-sm tracking-[0.2em] uppercase rounded-xs transition-all duration-300 hover:shadow-[0_0_30px_rgba(198,164,106,0.35)] hover:border-[#E2C799] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A46A] backdrop-blur-[2px]"
+              className="hidden sm:inline-flex relative group px-7 sm:px-9 py-3.5 sm:py-4 bg-transparent hover:bg-[#C6A46A]/10 active:bg-[#C6A46A]/20 border border-[#C6A46A] text-[#D7DCE0] font-cinzel font-bold text-xs sm:text-sm tracking-[0.2em] uppercase rounded-xs transition-all duration-300 hover:shadow-[0_0_30px_rgba(198,164,106,0.35)] hover:border-[#E2C799] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A46A] backdrop-blur-[2px]"
             >
               <span className="relative z-10 flex items-center gap-3">
                 <Flame className="w-4 h-4 text-[#C6A46A] transition-transform group-hover:scale-125" />
